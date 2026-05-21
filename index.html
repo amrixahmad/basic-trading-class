@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mizz Farra Webinar | Register Free Webinar Now</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '3104093153115645');
+    fbq('track', 'PageView');
+  </script>
   <style>
     html {
       scroll-behavior: smooth;
@@ -27,6 +39,7 @@
   </style>
 </head>
 <body class="bg-slate-950 text-slate-100 antialiased" style="font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;">
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=3104093153115645&ev=PageView&noscript=1" /></noscript>
   <div class="min-h-screen">
     <header class="sticky top-0 z-40 border-b border-slate-800/80 bg-slate-950/95 backdrop-blur">
       <div class="mx-auto flex w-full max-w-6xl items-center justify-center gap-3 px-4 py-3 sm:gap-4">
@@ -53,14 +66,10 @@
           </p>
 
           <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <a href="https://t.me/MizzFarraDyda" target="_blank" rel="noopener noreferrer" class="pulse-cta inline-flex w-full items-center justify-center rounded-lg bg-emerald-500 px-6 py-3 text-base font-bold uppercase tracking-wide text-slate-950 transition hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-300 sm:w-auto sm:px-8 sm:py-4 sm:text-lg">
-              Daftar Webinar (Telegram DM)
-            </a>
-            <a href="https://t.me/channelgengmizzfarra" target="_blank" rel="noopener noreferrer" class="inline-flex w-full items-center justify-center rounded-lg border border-slate-700 px-6 py-3 text-sm font-semibold text-slate-200 transition hover:border-slate-500 hover:text-white sm:w-auto sm:text-base">
-              Nak Belajar Dulu? Join Channel
+            <a href="#daftar" class="pulse-cta inline-flex w-full items-center justify-center rounded-lg bg-emerald-500 px-6 py-3 text-base font-bold uppercase tracking-wide text-slate-950 transition hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-300 sm:w-auto sm:px-8 sm:py-4 sm:text-lg">
+              Daftar Slot Webinar Sekarang
             </a>
           </div>
-          <p class="mt-4 text-sm text-slate-400">Nak daftar terus? Klik butang <span class="font-semibold text-emerald-300">Telegram DM</span>. Nak tengok perkongsian dulu? Klik <span class="font-semibold text-emerald-300">Telegram Channel</span>.</p>
         </div>
       </section>
 
@@ -85,8 +94,8 @@
                 Dalam webinar ini, saya bongkarkan cara mudah baca chart untuk entry dengan tenang dan yakin, dan sudah digunakan oleh ratusan trader seperti anda.
               </p>
               <div class="mt-7">
-                <a href="https://t.me/MizzFarraDyda" target="_blank" rel="noopener noreferrer" class="pulse-cta inline-flex w-full items-center justify-center rounded-lg bg-emerald-500 px-6 py-3 text-base font-bold uppercase tracking-wide text-slate-950 transition hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-300 sm:w-auto sm:px-8 sm:py-4 sm:text-lg">
-                  Daftar Webinar (Telegram DM)
+                <a href="#daftar" class="pulse-cta inline-flex w-full items-center justify-center rounded-lg bg-emerald-500 px-6 py-3 text-base font-bold uppercase tracking-wide text-slate-950 transition hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-300 sm:w-auto sm:px-8 sm:py-4 sm:text-lg">
+                  Isi Borang Pendaftaran
                 </a>
               </div>
             </div>
@@ -98,6 +107,57 @@
               </figcaption>
             </figure>
           </div>
+        </div>
+      </section>
+
+      <section id="daftar" class="mx-auto w-full max-w-6xl px-4 pb-12 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-4xl rounded-2xl border border-emerald-500/20 bg-slate-900/70 p-6 shadow-[0_0_0_1px_rgba(16,185,129,0.08)] sm:p-8">
+          <div class="text-center">
+            <p class="text-sm font-semibold uppercase tracking-[0.14em] text-emerald-300">Daftar Webinar Percuma</p>
+            <h2 class="mt-3 text-2xl font-extrabold text-white sm:text-3xl">Isi maklumat anda untuk reserve slot</h2>
+            <p class="mx-auto mt-3 max-w-2xl text-slate-300">Masukkan nama, emel, dan nombor telefon. Selepas hantar, kami akan follow up dengan maklumat webinar yang seterusnya.</p>
+          </div>
+
+          <div data-fs-success class="hidden mx-auto mt-6 max-w-2xl rounded-xl border border-emerald-500/30 bg-emerald-500/10 px-4 py-3 text-sm text-emerald-200"></div>
+          <div data-fs-error class="hidden mx-auto mt-3 max-w-2xl rounded-xl border border-red-500/30 bg-red-500/10 px-4 py-3 text-sm text-red-200"></div>
+
+          <form id="lead-form" action="https://formspree.io/f/xojbebek" method="POST" class="mx-auto mt-6 max-w-2xl space-y-4">
+            <input type="hidden" name="source" value="mizzfarra-lander" />
+            <input type="hidden" name="_subject" value="Lead Baru - Webinar Mizz Farra" />
+
+            <div class="hidden" aria-hidden="true">
+              <label for="website">Website</label>
+              <input id="website" name="website" type="text" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <div>
+              <label for="lead-name" class="mb-1 block text-sm font-medium text-slate-200">Nama</label>
+              <input id="lead-name" name="name" type="text" required data-fs-field class="w-full rounded-lg border border-slate-700 bg-slate-950 px-4 py-3 text-slate-100 placeholder:text-slate-500 focus:border-emerald-400 focus:outline-none" placeholder="Contoh: Nur Aisyah" />
+              <span data-fs-error="name" class="mt-1 block text-sm text-red-300"></span>
+            </div>
+
+            <div>
+              <label for="lead-email" class="mb-1 block text-sm font-medium text-slate-200">Emel</label>
+              <input id="lead-email" name="email" type="email" required data-fs-field class="w-full rounded-lg border border-slate-700 bg-slate-950 px-4 py-3 text-slate-100 placeholder:text-slate-500 focus:border-emerald-400 focus:outline-none" placeholder="nama@email.com" />
+              <span data-fs-error="email" class="mt-1 block text-sm text-red-300"></span>
+            </div>
+
+            <div>
+              <label for="lead-phone" class="mb-1 block text-sm font-medium text-slate-200">Nombor Telefon</label>
+              <input id="lead-phone" name="phone" type="tel" required minlength="8" pattern="^[0-9+\-\s]{8,20}$" data-fs-field class="w-full rounded-lg border border-slate-700 bg-slate-950 px-4 py-3 text-slate-100 placeholder:text-slate-500 focus:border-emerald-400 focus:outline-none" placeholder="Contoh: 012-3456789" />
+              <span data-fs-error="phone" class="mt-1 block text-sm text-red-300"></span>
+              <p class="mt-1 text-xs text-slate-400">Gunakan nombor yang aktif supaya senang kami hubungi anda jika perlu.</p>
+            </div>
+
+            <button type="submit" data-fs-submit-btn class="pulse-cta inline-flex w-full items-center justify-center rounded-lg bg-emerald-500 px-6 py-3 text-base font-bold uppercase tracking-wide text-slate-950 transition hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-300 sm:py-4">
+              Hantar Pendaftaran Saya
+            </button>
+
+            <div class="flex flex-col items-center justify-center gap-2 text-center text-sm text-slate-400 sm:flex-row sm:gap-4">
+              <span>Borang ini menggunakan validasi asas dan perlindungan spam.</span>
+              <a href="https://t.me/MizzFarraDyda" target="_blank" rel="noopener noreferrer" class="font-semibold text-emerald-300 hover:text-emerald-200">Nak tanya dulu? DM Telegram</a>
+            </div>
+          </form>
         </div>
       </section>
 
@@ -141,8 +201,8 @@
 
           <p class="mt-8 text-xl font-extrabold text-white sm:text-2xl">Jika anda serius nak ubah result trading, mula dengan webinar percuma ini.</p>
           <div class="mt-6">
-            <a href="https://t.me/MizzFarraDyda" target="_blank" rel="noopener noreferrer" class="pulse-cta inline-flex w-full items-center justify-center rounded-lg bg-emerald-500 px-6 py-3 text-base font-bold uppercase tracking-wide text-slate-950 transition hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-300 sm:w-auto sm:px-8 sm:py-4 sm:text-lg">
-              Book Slot Webinar (Telegram DM)
+            <a href="#daftar" class="pulse-cta inline-flex w-full items-center justify-center rounded-lg bg-emerald-500 px-6 py-3 text-base font-bold uppercase tracking-wide text-slate-950 transition hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-300 sm:w-auto sm:px-8 sm:py-4 sm:text-lg">
+              Isi Borang Untuk Reserve Slot
             </a>
           </div>
         </div>
@@ -165,10 +225,134 @@
         </div>
       </div>
     </footer>
+
+    <div id="success-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-950/80 px-4">
+      <div class="absolute inset-0" data-modal-close></div>
+      <div class="relative z-10 w-full max-w-md rounded-2xl border border-emerald-500/20 bg-slate-900 p-6 shadow-2xl sm:p-8">
+        <button id="success-modal-close" type="button" class="absolute right-4 top-4 text-2xl leading-none text-slate-400 transition hover:text-white" aria-label="Tutup modal">×</button>
+        <p class="text-sm font-semibold uppercase tracking-[0.14em] text-emerald-300">Pendaftaran Diterima</p>
+        <h3 class="mt-3 text-2xl font-extrabold text-white">Sementara tunggu update webinar, join channel dulu</h3>
+        <p class="mt-3 text-slate-300">Dalam channel Telegram, anda boleh tengok perkongsian, update, dan content daripada Mizz Farra sementara kami follow up dengan anda.</p>
+        <div class="mt-6 flex flex-col gap-3">
+          <a href="https://t.me/channelgengmizzfarra" target="_blank" rel="noopener noreferrer" class="inline-flex w-full items-center justify-center rounded-lg bg-emerald-500 px-6 py-3 text-base font-bold uppercase tracking-wide text-slate-950 transition hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-300">
+            Join Telegram Channel
+          </a>
+          <button id="success-modal-dismiss" type="button" class="inline-flex w-full items-center justify-center rounded-lg border border-slate-700 px-6 py-3 text-sm font-semibold text-slate-200 transition hover:border-slate-500 hover:text-white">
+            Tutup
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script>
     const countdownEl = document.getElementById('countdown');
+    const leadForm = document.getElementById('lead-form');
+    const leadPhoneInput = document.getElementById('lead-phone');
+    const formSuccessEl = document.querySelector('[data-fs-success]');
+    const formErrorEl = document.querySelector('[data-fs-error]');
+    const successModal = document.getElementById('success-modal');
+    const successModalClose = document.getElementById('success-modal-close');
+    const successModalDismiss = document.getElementById('success-modal-dismiss');
+    const modalCloseTargets = document.querySelectorAll('[data-modal-close]');
+    let leadEventTracked = false;
+
+    window.formspree = window.formspree || function () {
+      (formspree.q = formspree.q || []).push(arguments);
+    };
+    formspree('initForm', { formElement: '#lead-form', formId: 'xojbebek' });
+
+    if (leadPhoneInput) {
+      leadPhoneInput.addEventListener('input', function () {
+        if (leadPhoneInput.validity.patternMismatch || leadPhoneInput.validity.tooShort) {
+          leadPhoneInput.setCustomValidity('Sila masukkan nombor telefon yang sah.');
+        } else {
+          leadPhoneInput.setCustomValidity('');
+        }
+      });
+    }
+
+    function openSuccessModal() {
+      successModal.classList.remove('hidden');
+      successModal.classList.add('flex');
+      document.body.classList.add('overflow-hidden');
+    }
+
+    function closeSuccessModal() {
+      successModal.classList.add('hidden');
+      successModal.classList.remove('flex');
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    if (successModalClose) {
+      successModalClose.addEventListener('click', closeSuccessModal);
+    }
+
+    if (successModalDismiss) {
+      successModalDismiss.addEventListener('click', closeSuccessModal);
+    }
+
+    if (modalCloseTargets.length) {
+      modalCloseTargets.forEach(function (target) {
+        target.addEventListener('click', closeSuccessModal);
+      });
+    }
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && successModal && successModal.classList.contains('flex')) {
+        closeSuccessModal();
+      }
+    });
+
+    if (formSuccessEl) {
+      const successObserver = new MutationObserver(function () {
+        const hasMessage = formSuccessEl.textContent.trim().length > 0;
+        formSuccessEl.classList.toggle('hidden', !hasMessage);
+
+        if (hasMessage && !leadEventTracked) {
+          leadEventTracked = true;
+
+          if (typeof window.fbq === 'function') {
+            window.fbq('track', 'Lead');
+          }
+
+          formSuccessEl.classList.add('hidden');
+          openSuccessModal();
+        }
+      });
+
+      successObserver.observe(formSuccessEl, { childList: true, subtree: true, characterData: true });
+    }
+
+    if (formErrorEl) {
+      const errorObserver = new MutationObserver(function () {
+        const hasMessage = formErrorEl.textContent.trim().length > 0;
+        formErrorEl.classList.toggle('hidden', !hasMessage);
+      });
+
+      errorObserver.observe(formErrorEl, { childList: true, subtree: true, characterData: true });
+    }
+
+    if (leadForm) {
+      leadForm.addEventListener('submit', function (event) {
+        const honeypotField = leadForm.querySelector('input[name="website"]');
+        if (honeypotField && honeypotField.value.trim() !== '') {
+          event.preventDefault();
+          return;
+        }
+
+        leadEventTracked = false;
+
+        if (formErrorEl) {
+          formErrorEl.classList.add('hidden');
+        }
+
+        if (!leadForm.checkValidity()) {
+          event.preventDefault();
+          leadForm.reportValidity();
+        }
+      });
+    }
 
     let remainingSeconds = 15 * 60;
 
@@ -187,5 +371,6 @@
     updateCountdown();
     setInterval(updateCountdown, 1000);
   </script>
+  <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
 </html>
