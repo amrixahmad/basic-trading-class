@@ -223,6 +223,18 @@
               <p class="mt-1 text-xs text-slate-400">Gunakan nombor yang aktif supaya senang kami hubungi anda jika perlu.</p>
             </div>
 
+            <div>
+              <label for="lead-instrument" class="mb-1 block text-sm font-medium text-slate-200">Instrumen yang anda paling minat</label>
+              <select id="lead-instrument" name="preferred_instrument" required data-fs-field class="w-full rounded-lg border border-slate-700 bg-slate-950 px-4 py-3 text-slate-100 focus:border-emerald-400 focus:outline-none">
+                <option value="">Pilih satu</option>
+                <option value="Gold">Gold</option>
+                <option value="Crypto">Crypto</option>
+                <option value="FCPO">FCPO</option>
+                <option value="Stocks">Stocks</option>
+              </select>
+              <span data-fs-error="preferred_instrument" class="mt-1 block text-sm text-red-300"></span>
+            </div>
+
             <button type="submit" data-fs-submit-btn class="pulse-cta inline-flex w-full items-center justify-center rounded-lg bg-emerald-500 px-6 py-3 text-base font-bold uppercase tracking-wide text-slate-950 transition hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-300 sm:py-4">
               Hantar Pendaftaran Saya
             </button>
@@ -285,6 +297,7 @@
     const countdownEl = document.getElementById('countdown');
     const leadForm = document.getElementById('lead-form');
     const leadPhoneInput = document.getElementById('lead-phone');
+    const leadInstrumentInput = document.getElementById('lead-instrument');
     const formSuccessEl = document.querySelector('[data-fs-success]');
     const formErrorEl = document.querySelector('[data-fs-error]');
     const successModal = document.getElementById('success-modal');
@@ -292,6 +305,7 @@
     const successModalDismiss = document.getElementById('success-modal-dismiss');
     const modalCloseTargets = document.querySelectorAll('[data-modal-close]');
     let leadEventTracked = false;
+    let submittedInstrument = '';
 
     window.formspree = window.formspree || function () {
       (formspree.q = formspree.q || []).push(arguments);
@@ -348,7 +362,7 @@
         if (hasMessage && !leadEventTracked) {
           leadEventTracked = true;
 
-          if (typeof window.fbq === 'function') {
+          if (submittedInstrument === 'Gold' && typeof window.fbq === 'function') {
             window.fbq('track', 'Lead');
           }
 
@@ -378,6 +392,7 @@
         }
 
         leadEventTracked = false;
+        submittedInstrument = leadInstrumentInput ? leadInstrumentInput.value : '';
 
         if (formErrorEl) {
           formErrorEl.classList.add('hidden');
